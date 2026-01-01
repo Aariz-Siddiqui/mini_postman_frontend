@@ -33,7 +33,7 @@ export default function RequestBuilder() {
     }
 
     try {
-      const res = await fetch('https://mini-postman-be.vercel.app', {
+      const res = await fetch('https://mini-postman-be.vercel.app/api/execute', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
